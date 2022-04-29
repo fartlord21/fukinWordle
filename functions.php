@@ -1,2 +1,6 @@
-<!DOCTYPE html>
-<h1>hello world</h1>
+<?php 
+
+function selectDifficulty() {
+  
+}
+?>
