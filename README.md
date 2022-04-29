@@ -1,0 +1,2 @@
+# fukinWordle
+ hamde lamde
