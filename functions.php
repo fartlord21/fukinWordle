@@ -1,22 +1,5 @@
 <?php
 
-function displaysDifficultyChoices()
-{
-  global $connection;
-
-  $query = "SELECT * FROM difficultyChoices";
-
-  $result = mysqli_query($connection, $query);
-
-  if (!$result) {
-    die('query was a failure ma boi.');
-  } else {
-    while ($difficulty = mysqli_fetch_assoc($result)) {
-      $choices = $difficulty['choices'];
-      echo "<option>$choices</option>";
-    }
-  }
-}
 
 //some combination of these two makes function selectsDifficulty
 function selectsDifficulty()
@@ -29,8 +12,8 @@ function selectsDifficulty()
     if (!$difficulty) {
       die('failure to select difficulty' . mysqli_error($connection));
     } else {
-      print_r($_GET);
-      echo "<br>let's set a ";
+      //print_r($_GET);
+      //echo "<br>let's set a ";
     }
     /* function returnsDataForUpdating() {//no condiitinal for running bc we want it to load as the page loads so the user can pick from a list. 
 global $connection;//this can be done instead of $connection=$_POST["$blahBLah"]; you would usually do, this is the way to do it with variables created in other files. these files have to be included though
