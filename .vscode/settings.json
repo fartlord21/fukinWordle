@@ -1,0 +1,5 @@
+{
+	"php.suggest.basic": false,
+	"editor.tabCompletion": "on",
+	"git.supportCancellation": true
+}

@@ -1,5 +1,22 @@
 <?php
+function displaysDifficultyChoices()
+{
+  global $connection;
 
+  $query = "SELECT * FROM difficultyChoices";
+
+  $result = mysqli_query($connection, $query);
+
+  if (!$result) {
+    die('query was a failure ma boi.');
+    //echo "death";
+  } else {
+    while ($difficulty = mysqli_fetch_assoc($result)) {
+      $choices = $difficulty['choices'];
+      echo "<option>$choices</option>";
+    }
+  }
+}
 
 //some combination of these two makes function selectsDifficulty
 function selectsDifficulty()
