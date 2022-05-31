@@ -19,10 +19,7 @@
   <input type="submit" name="submit" value="username">
   <?php selectsDifficulty(); ?>
   <br>
-  <p>
-    retreat to
-    <a href="startDifficulty.php">difficulty</a>
-  </p>
+  <!--for the math system i want to use arrays and just shift it through each function-->
 </div>
 
 <?php include "includes/footerStart.php"; ?>
